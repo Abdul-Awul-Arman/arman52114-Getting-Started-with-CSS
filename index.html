@@ -2,31 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Abdul Awul Arman</title>
 </head>
 
 <body>
-    <!-- the intro section start here -->
-    <section id="intro">
-        <p class="name">Hi, my name is <span>Arman.</span></p>
+  <!-- navbar section -->
+  <nav>
+    <ul>
+      <li>
+        <h1><a href="#"><span class="fa-solid fa-code"></span> <span>A.A.Arman</span></a></h1>
+      </li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#"><span aria-hidden="true" class="fa-brands fa-linkedin"></span> <span
+            class="sr-only">LinkedIn</span></a></li>
+      <li><a href="#"><span aria-hidden="true" class="fa-brands fa-github"></span><span
+            class="sr-only">GitHub</span></a></li>
+      <li><a class="button" href="#">Resume</a></li>
+    </ul>
+  </nav>
+  <!-- the intro section start here -->
+  <section id="intro">
+    <p class="name">Hi, my name is <span>Arman.</span></p>
 
-        <h2>I am front end developer.</h2>
+    <h2>I am front end developer.</h2>
 
-        <p>I'm a developer specializing in HTML,CSS,JavaScript,React.js,Next.js.Currently, I'm learning <a href="#">web
-                development</a>.</p>
-    </section>
-    <section id="contact">
+    <p>I'm a developer specializing in HTML,CSS,JavaScript,React.js,Next.js.</p>
+    <p>Currently, I'm learning <a href="#">Web
+        Development</a>.</p>
+  </section>
+  <!-- the gradient line -->
+  <div class="line"></div>
+
+  <!-- Projects section start here -->
+  <div class="project-div">
+    <section class="project">
+      <h2>Projects I'm proud of</h2>
       <div>
-        <h2>Contact me</h2>
-
-        <p>I'm always interested in hearing about good looking and Functional web application </p>
-
-       <a href="mailto:abdulawularman52114@gamil.com">Email me</a>
+        <h4>Latest Project</h4>
       </div>
+      <article>
+        <h3>Wall of Wonder</h3>
+  
+        <p>Description of the project. This should be fairly concise while also describing the key components that you
+          developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be
+          sure
+          to include specific links anywhere in the description. A link looks like
+          <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>,and multiple links look <a href="#">like
+            this</a> and <a href="#">like this</a>.
+        </p>
+        <h4>Technologies used include:</h4>
+        <ul>
+          <li>HTML</li>
+          <li>css</li>
+          <li>SVG</li>
+        </ul>
+        <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
+          alt="Screenshot of the Wall of Wonder." />
+      </article>
     </section>
+  </div>
+
+  <!-- the gradient line -->
+  <div class="line"></div>
+
+  <!-- the contact section start here -->
+  <div class="contact-div">
+    <section id="contact">
+      <h2>Contact me</h2>
+
+      <p>I'm always interested in hearing about good looking and Functional web application </p>
+
+      <a href="mailto:abdulawularman52114@gamil.com">Email me</a>
+    </section>
+  </div>
+  <!-- the gradient line -->
+  <div class="line"></div>
+
+  <!-- footer section start here -->
+  <footer>
+    <h2>Arman &middot; Developer </h2>
+
+    <ul>
+      <li>
+        <a href="#"><span class="fa-brands fa-linkedin" aria-hidden="true"></span> <span
+            class="sr-only">LinkedIn</span></a>
+      </li>
+      <li>
+        <a href="#"><span class="fa-brands fa-github" aria-hidden="true"></span> <span class="sr-only">GitHud</span></a>
+      </li>
+      <li>
+        <a href="#"><span class="fa-solid fa-envelope" aria-hidden="true"></span> <span class="sr-only">Email</span></a>
+      </li>
+    </ul>
+    <p><small>&copy;A.A.Arman. All rights reserved.</small></p>
+  </footer>
 
 </body>
 

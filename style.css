@@ -21,6 +21,8 @@
 
 *,*::after,*::before{
   box-sizing: inherit;
+  /* padding: 0;
+  margin: 0; */
   
 }
 
@@ -53,14 +55,81 @@ body {
     text-decoration: none;
   }
 
+  /* navbar section */
+  nav{
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+  }
+
+  nav ul{
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav h1 a{
+    font-size: var(--sans);
+  }
+
+  nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  nav a{
+    color: var(--white);
+    text-decoration: none;
+    /* we want to full click able area so we give display block */
+    display: block;
+  }
+
+  nav a:hover{
+    color: var(--magenta);
+  }
+
+  nav [class*='fa-']{
+    /* font size 150% means that add 50% size with base size (100%+50%) */
+    font-size: 150%;
+    color:var(--aqua )
+  }
+
+  nav h1 [class*='fa-']{
+    /* font size 150% means that add 50% size with base size (100%+50%) */
+    font-size: 100%;
+    color:var(--aqua )
+  }
+
+  nav a:hover, nav [class*='fa-']:hover{
+    color: var(--hotmag);
+  }
+
+  .button{
+    background-color: var(--magenta);
+    padding:.5rem;
+    border-radius: 5px;
+  }
+
+  .button:hover{
+    color:white;
+  }
+
+
+
   /* intro section */
   #intro{
-      padding-bottom: 10rem;
+      padding:4rem 1rem 10rem 3.5rem;
+      max-width: 1200px;
+      margin:0 auto;
   }
 
   #intro p{
     font-size: 1rem;
-    line-height: 1.5;
+    
+
   }
 
   .name{
@@ -79,26 +148,31 @@ body {
     font-weight: normal;
   }
 
-  /* contact section start here */
-  #contact{
-    background-color:var(--plum);
+  /* project section start here */
+  .project-div{
+    background-color: var(--dkblue);
   }
 
- #contact div{
-  margin: auto;
-  width: 400px;
+  /* contact section start here */
+ .contact-div{
   background-color: var(--plum);
+ }
+
+ #contact {
+  width: 400px;
+  
   text-align: center;
   font-family:var(--sans);
   padding: 2rem 0;
+  margin: 0 auto;
  }
 
- #contact div p:first-child{
+ #contact p:first-child{
   font-weight:bold;
   font-size: 2rem;
  }
 
- #contact div a{
+ #contact  a{
    color: var(--white);
    background-color: var(--magenta);
    text-decoration: none;
@@ -110,6 +184,54 @@ body {
    display: inline-block;
  }
 
- #contact div a:hover{
+ #contact a:hover{
   background-color: var(--hotmag);
+ }
+
+ /* footer start here */ 
+ footer ul{
+  list-style: none;
+ }
+ footer{
+  padding: 4rem 0;
+  text-align: center;
+ }
+
+ footer ul{
+  width: 400px;
+  display: flex;
+  margin: 2rem auto;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+  flex-flow: row wrap;
+
+ }
+
+ footer li a [class*='fa-']{
+   font-size: 3rem;
+ }
+
+
+ .line{
+  background: rgb(134,251,251);
+background: linear-gradient(90deg, rgba(134,251,251,1) 0%, rgba(134,251,251,1) 0%, rgba(255,23,228,1) 100%);
+  height: 2px;
+ }
+
+
+ @media  all and (min-width:850px) {
+
+  nav{
+    max-width: 1200px;
+    margin:0 auto;
+  }
+  
+  nav ul li:first-child{
+    flex-basis:auto;
+    text-align: left;
+    margin-right:auto ;
+  }
+
+  
  }
