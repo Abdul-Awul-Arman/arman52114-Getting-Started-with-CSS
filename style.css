@@ -158,6 +158,10 @@ body {
   .project-div{
     background-color: var(--dkblue);
   }
+  .for-width{
+    width: 1200px;
+    margin: 0 auto;
+  }
 
   #project{
     padding: 4rem 1rem;
@@ -217,7 +221,7 @@ body {
   
   text-align: center;
   font-family:var(--sans);
-  padding: 2rem 0;
+  padding: 4rem 0;
   margin: 0 auto;
  }
 
