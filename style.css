@@ -158,13 +158,11 @@ body {
   .project-div{
     background-color: var(--dkblue);
   }
-  .for-width{
-    width: 1200px;
-    margin: 0 auto;
-  }
+ 
 
   #project{
     padding: 4rem 1rem;
+    width: 100%;
   }
 
   #project h2{
@@ -295,7 +293,11 @@ background: linear-gradient(90deg, rgba(134,251,251,1) 0%, rgba(134,251,251,1) 0
  }
 
  @media all and (min-width:550px) {
-
+  
+  .for-width{
+    width: 1200px;
+    margin: 0 auto;
+  }
   article{
     display: grid;
     grid-template-columns: repeat(10,1fr);
